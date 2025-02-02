@@ -2,7 +2,7 @@ const {User}=require('../models/index');
 class UserRepository{
     async create(data){
         try {
-            console.log(data)
+            
             const user=await User.create(data);
           
             return user;
